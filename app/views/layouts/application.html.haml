@@ -1,10 +1,20 @@
 !!!
 %html
   %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{content: 'text/html; charset=UTF-8', 'http-equiv': 'Content-Type'}/
+    %meta{name: 'Viewport', content:  'width=device-width, initial-scale=1.0'}/
     %title Coverwatch
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = stylesheet_link_tag 'http://fonts.googleapis.com/icon?family=Material+Icons'
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   %body
-    = yield
+    .navbar-fixed
+      %nav
+        .nav-wrapper
+          %a.brand-logo.center{href: root_path} Logo
+          %ul.left.hide-on-med-and-down
+            %li=link_to 'Home', root_path
+
+    .container
+      = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
