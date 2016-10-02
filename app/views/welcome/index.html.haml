@@ -2,7 +2,7 @@
   .col.s12
     %form
       %label{for: 'search'}
-        %h5.center search for a player
+        %h5.center=t('.search_player')
       .input-field
         -# %i.material-icons.prefix search
-        %input#search{type: 'search', required: true, placeholder: 'e.g : Croustiboy#3735'}/
+        %input#search{type: 'search', required: true, placeholder: t('.search_placeholder')}/
