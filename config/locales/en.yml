@@ -20,4 +20,7 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  welcome:
+    index:
+      search_player: search for a player
+      search_placeholder: e.g. Croustiboy#2375...

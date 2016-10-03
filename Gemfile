@@ -30,6 +30,9 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Force version of coffee-script-source to fix an issue with *.coffee scripts on windows
+gem 'coffee-script-source', '~> 1.8.0'
+
 # Gem added specifically for coverwatch
 gem 'haml-rails'
 gem 'materialize-sass'
